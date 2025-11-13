@@ -33,7 +33,7 @@ jobs:
           echo "sha=$SHA" >> $GITHUB_OUTPUT
 
       - name: Build and push the image to AWS ECR
-         uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v6
         with:
           context: .
           push: true
