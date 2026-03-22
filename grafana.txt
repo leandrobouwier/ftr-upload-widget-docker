@@ -1,0 +1,23 @@
+export OTEL_EXPORTER_OTLP_PROTOCOL="http/protobuf"
+export OTEL_EXPORTER_OTLP_ENDPOINT="https://otlp-gateway-prod-sa-east-1.grafana.net/otlp"
+export OTEL_EXPORTER_OTLP_HEADERS="Authorization=Basic MTU2MTIzNTpnbGNfZXlKdklqb2lNVGN3TVRNM01DSXNJbTRpT2lKemRHRmpheTB4TlRZeE1qTTFMVzkwYkhBdGQzSnBkR1V0Y205amEzTmxZWFF0ZEc5clpXNGlMQ0pySWpvaVEzTnNhMHc1TnpkRGFHRTJNVlE0TVVnMGR6Um1NRUpaSWl3aWJTSTZleUp5SWpvaWNISnZaQzF6WVMxbFlYTjBMVEVpZlgwPQ=="
+
+OTEL_TRACES_EXPORTER="otlp" 
+OTEL_METRICS_EXPORTER="otlp" 
+OTEL_LOGS_EXPORTER="otlp" 
+OTEL_NODE_RESOURCE_DETECTORS="env,host,os" 
+OTEL_RESOURCE_ATTRIBUTES="service.name=ftr-upload"
+OTEL_EXPORTER_OTLP_ENDPOINT=<endpoint> 
+NODE_OPTIONS="--require @opentelemetry/auto-instrumentations-node/register" 
+node <my-app>.js
+
+----------------------
+export OTEL_EXPORTER_OTLP_PROTOCOL="http/protobuf"
+export OTEL_EXPORTER_OTLP_ENDPOINT="https://otlp-gateway-prod-sa-east-1.grafana.net/otlp"
+export OTEL_EXPORTER_OTLP_HEADERS="Authorization=Basic MTU2MTIzNTpnbGNfZXlKdklqb2lNVGN3TVRNM01DSXNJbTRpT2lKemRHRmpheTB4TlRZeE1qTTFMVzkwYkhBdGQzSnBkR1V0Y205amEzTmxZWFF0ZEc5clpXNGlMQ0pySWpvaVEzTnNhMHc1TnpkRGFHRTJNVlE0TVVnMGR6Um1NRUpaSWl3aWJTSTZleUp5SWpvaWNISnZaQzF6WVMxbFlYTjBMVEVpZlgwPQ=="
+export OTEL_TRACES_EXPORTER="otlp" 
+export OTEL_METRICS_EXPORTER="otlp" 
+export OTEL_LOGS_EXPORTER="otlp" 
+export OTEL_NODE_RESOURCE_DETECTORS="env,host,os" 
+export OTEL_RESOURCE_ATTRIBUTES="service.name=ftr-upload"
+export NODE_OPTIONS="--require @opentelemetry/auto-instrumentations-node/register"
